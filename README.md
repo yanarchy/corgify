@@ -1,6 +1,6 @@
 # Corgify: Corgi Up Your Life
 
-![Banner](./corgi_icon128.png)
+![Banner](./images/corgi_icon128.png)
 
 ## About
 

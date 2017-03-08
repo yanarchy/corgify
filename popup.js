@@ -32,10 +32,10 @@ for(var i = 0; i < images.length - 1; i++) {
   if (images[i].height / images[i].width < .3 ) {
     index = Math.floor(Math.random() * longImages.length);
     images[i].src = chrome.extension.getURL(longImages[index]);
-    if (images[i].srcset) images[i].srcset = chrome.extension.getURL(longImages[index]);
+    if (images[i].srcset) images[i].srcset = chrome.extension.getURL('./images/' + longImages[index]);
   } else {
     index = Math.floor(Math.random() * arrayOfImages.length);
     images[i].src = chrome.extension.getURL(arrayOfImages[index]);
-    if (images[i].srcset) images[i].srcset = chrome.extension.getURL(arrayOfImages[index]);
+    if (images[i].srcset) images[i].srcset = chrome.extension.getURL('./images/' + arrayOfImages[index]);
   }
 }
